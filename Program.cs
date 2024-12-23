@@ -5,7 +5,13 @@
         static void Main(string[] args)
         {
             FindOddOne.FindOddNumber();// Challenge Problem 1
-            MissingNumber.MissingNumbers([1,2,4,5,6,7,8,9]); // Challenge Problem 2
+            int[] nums = { 0, 1, 0, 3, 12 }; //array of integers declared
+            Console.WriteLine($" Your original array is: {string.Join(", ", nums)}");
+
+           
+            MissingNumber.MoveZeroes(nums); //calling method MoveZeroes
+
+            Console.WriteLine($"\n Your corrected array is: {string.Join(", ", nums)}"); //print out corrected array // Challenge Problem 2
         }
     }
 }
